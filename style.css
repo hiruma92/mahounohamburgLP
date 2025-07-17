@@ -24,7 +24,7 @@ p {
 
 /* ヒーローセクション */
 .hero {
-    background-image: url('img/メインビジュアル.jpg');
+    background-image: url('img/main_visual.jpg');
     background-size: cover;
     background-position: center;
     color: white;
