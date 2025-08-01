@@ -196,6 +196,7 @@ section h2::after {
     width: 100%;
     padding: 12px 0;
     font-size: 1rem;
+    box-sizing: border-box; /* はみ出し防止 */
 }
 
 
@@ -318,5 +319,50 @@ section h2::after {
 
     .product-price {
         font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .catchphrase {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.0rem;
+    }
+
+    .cta-button {
+        padding: 12px 30px;
+        font-size: 1.0rem;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    section h2 {
+        font-size: 1.3rem; /* 1行に収まるように調整 */
+        line-height: 1.5;
+    }
+
+    .description p br {
+        display: none; /* スマホでは<br>を非表示に */
+    }
+
+    .section-logo {
+        max-width: 280px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
     }
 }
